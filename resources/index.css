@@ -4,10 +4,15 @@ body {
 
 h1 {
   text-align: center;
+  background: #F5F3E7;
   font-family: 'roboto', sans-serif;
-  color: #F5F3E7;
-  padding: -10px 10px;
-  height: auto;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 316px;
+  margin: 10px auto;
+  width: fit-content;
+  border: 3px solid black;
 }
 
 .kallax {
@@ -120,5 +125,15 @@ h1 {
   button:hover {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
+  }
+  
+  .player-container {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000000, 10px 10px 10px #000000;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 5px;
+    width: 300px;
+    background-color: #282828; 
   }
   
