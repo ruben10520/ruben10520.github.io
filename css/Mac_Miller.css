@@ -1,0 +1,239 @@
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #e4ddc9;
+}
+
+.artist {
+    background-color: #F5F3E7;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0px 5%;
+    border-radius: 10px;
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.four {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 800px;
+    grid-gap: 10px;
+    padding-top: 1%;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+.list p {
+    text-align: left;
+    overflow: auto;
+    font-weight: bold;
+    background-color: #F5F3E7;
+}
+
+.info {
+    padding: 0px 10%;
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+}
+
+.player-container {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 300px;
+    height: 80px;
+    margin: 50px auto 10px;
+  }
+
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  transition: all 300ms ease;
+  z-index: 2;
+
+}
+
+.cover {
+    padding-top: 270px;
+    padding-left: 5%;
+}
+
+.cover-wrapper {
+  border-radius: 5px;
+  background-color: #B2B9A6;
+  background-image: url("../pictures/Mac_Miller.jpeg");
+  background-size: cover;
+}
+
+.cover-wrapper .cover .cover--title {
+  position: absolute;
+  width: 230px;
+  padding: 10px;
+  border-radius: 2px 2px 0 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #2f031a;
+  transition: all 300ms ease;
+}
+
+.disc-wrapper {
+  width: 240px;
+  height: 240px;
+  margin-left: -110px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+.disc-wrapper .disc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  background: #1a1a1a;
+  border: 10px solid #000;
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+  transition: all 300ms ease;
+}
+.disc-wrapper .disc .disc--label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  background-color: #da5d46;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #000;
+  transition: all 300ms ease;
+}
+.disc-wrapper .disc .disc--label .label-title {
+  margin-top: -25px;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  transition: all 300ms ease;
+}
+.disc-wrapper .disc .disc--label::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #feecc2;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+.disc-wrapper .disc::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  box-shadow: 0 0 0 1px #121212;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+.disc-wrapper .disc::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  box-shadow: 0 0 0 1px #121212;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+  }
+
+  .cover-wrapper .cover {
+    width: 140px;
+    height: 140px;
+  }
+  .cover-wrapper .cover .cover--title {
+    width: 140px;
+    font-size: 16px;
+  }
+
+  .disc-wrapper {
+    width: 140px;
+    height: 140px;
+    margin-left: -50px;
+  }
+  .disc-wrapper .disc {
+    width: 130px;
+    height: 130px;
+  }
+  .disc-wrapper .disc .disc--label {
+    width: 50px;
+    height: 50px;
+  }
+  .disc-wrapper .disc .disc--label .label-title {
+    margin-top: -15px;
+    padding-bottom: 5px;
+    font-size: 9px;
+  }
+  .disc-wrapper .disc .disc--label::after {
+    width: 5px;
+    height: 5px;
+  }
+  .disc-wrapper .disc::before {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    box-shadow: 0 0 0 1px #121212;
+    border-radius: 50%;
+  }
+  .disc-wrapper .disc::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 1px #121212;
+    border-radius: 50%;
+  }
+}
+button {
+    background-color: #B2B9A6;
+    color: #F5F3E7;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    z-index: 10;
+}
