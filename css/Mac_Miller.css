@@ -24,7 +24,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 95%;
+    grid-auto-rows: fit-content(400px) fit-content(400px) 1fr;
     grid-gap: 10px;
     padding-top: 1%;
     margin: auto;
