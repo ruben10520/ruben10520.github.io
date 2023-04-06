@@ -50,8 +50,8 @@ footer {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    width: 500px;
-    height: 80px;
+    width: 350px;
+    height: 500px;
     margin: 50px auto 10px;
   }
 
@@ -110,7 +110,10 @@ footer {
   width: 220px;
   height: 220px;
   background: #1a1a1a;
-  border: 10px solid #000;
+  border-top: 10px solid #F5F3E7;
+  border-right: 10px solid #F5F3E7;
+  border-left: 10px solid #345ebe;
+  border-bottom: 10px solid #345ebe;
   border-radius: 50%;
   animation: spin 3s infinite linear;
   transition: all 300ms ease;
@@ -124,7 +127,10 @@ footer {
   height: 80px;
   background-color: #da5d46;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px #000;
+  border-top: 70px solid #F5F3E7;
+  border-right: 70px solid #F5F3E7;
+  border-left: 70px solid #345ebe;
+  border-bottom: 70px solid #345ebe;
   transition: all 300ms ease;
 }
 .disc-wrapper .disc .disc--label .label-title {
@@ -148,7 +154,7 @@ footer {
   position: absolute;
   width: 170px;
   height: 170px;
-  box-shadow: 0 0 0 1px #121212;
+  box-shadow: 0 0 0 1px #e4ddc9;
   border-radius: 50%;
   transition: all 300ms ease;
 }
@@ -157,7 +163,7 @@ footer {
   position: absolute;
   width: 130px;
   height: 130px;
-  box-shadow: 0 0 0 1px #121212;
+  box-shadow: 0 0 0 1px #e4ddc9;
   border-radius: 50%;
   transition: all 300ms ease;
 }
@@ -213,7 +219,7 @@ footer {
     position: absolute;
     width: 95px;
     height: 95px;
-    box-shadow: 0 0 0 1px #121212;
+    box-shadow: 0 0 0 1px #e4ddc9;
     border-radius: 50%;
   }
   .disc-wrapper .disc::after {
@@ -221,7 +227,6 @@ footer {
     position: absolute;
     width: 80px;
     height: 80px;
-    box-shadow: 0 0 0 1px #121212;
     border-radius: 50%;
   }
 }
