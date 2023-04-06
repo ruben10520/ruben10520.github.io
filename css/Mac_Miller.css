@@ -9,6 +9,7 @@ body {
     padding: 5px 10px;
     margin: 0px 5%;
     border-radius: 10px;
+    font-size: 1em;
 }
 
 img {
@@ -26,17 +27,17 @@ img {
     width: 95%;
     grid-gap: 10px;
     padding-top: 1%;
-    margin: auto;
     justify-content: center;
     justify-items: center;
 }
 
 .list p {
-    text-align: left;
-    overflow: auto;
-    font-weight: bold;
-    background-color: #F5F3E7;
-    margin: auto;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0px 5%;
+  overflow: auto;
+  font-weight: bold;
+  background-color: #F5F3E7;
 }
 
 .funfact p {
