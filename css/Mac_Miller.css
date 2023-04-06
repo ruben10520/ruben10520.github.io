@@ -16,13 +16,14 @@ img {
     height: 280px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    margin: auto;
 }
 
 .four {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 800px;
+    width: 95%;
     grid-gap: 10px;
     padding-top: 1%;
     margin: auto;
@@ -35,6 +36,7 @@ img {
     overflow: auto;
     font-weight: bold;
     background-color: #F5F3E7;
+    margin: auto;
 }
 
 .funfact p {
@@ -237,7 +239,7 @@ button {
     cursor: pointer;
     padding: 10px 15px;
     position: absolute;
-    top: 5%;
+    top: 20px;
     left: 10%;
     z-index: 10;
 }
